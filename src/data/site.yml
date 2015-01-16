@@ -1,0 +1,34 @@
+title: Les nodebots
+maxime: "La révolution est comme une bicyclette quand elle n'avance pas, elle tombe !"
+menu:
+  - title: Home
+    url: index.html
+    basename: index
+  - title: Projects
+    url: projects.html
+    basename: projects
+  - title: What are nodebots ?
+    url: about.html
+    basename: about
+  - title: Infos pratiques
+    url: info.html
+    basename: info
+
+
+friends:
+  - title : "NodeBots.io"
+    url: "http://nodebots.io/"
+  - title : "Nodebots of London"
+    url: "http://london.nodebots.io/"
+  - title : "Le loop"
+    url: "http://leloop.org/"
+  - title : "L'éléctrolab"
+    url: "http://electrolab.fr/"
+  - title : "Carrefour numérique²"
+    url: "http://www.cite-sciences.fr/fr/au-programme/lieux-ressources/carrefour-numerique2/"
+
+contacts:
+  - title : "Twitter"
+    url: "https://twitter.com/lesnodebots"
+  - title : "Gitter"
+    url: "https://gitter.im/nodebotsParis?utm_source=share-link&utm_medium=link&utm_campaign=share-link"

@@ -1,0 +1,74 @@
+---
+title: What are nodebots ?
+
+---
+<h1>{{ title }}</h1>
+
+{{#markdown}}
+> any application that can be written in JavaScript, will eventually be written in JavaScript.
+
+  Nodebots is a common placeholder name for electronic devices controlled with javascript
+
+  Yes you read correctly, you web developer you can make things blink and move, too !
+
+## How does this works ?
+
+  most of the time you don't run javascript, but you use a protocol of communication that allow you to access methods on your device
+
+  In this group, you will probably start by using an Arduino and Johnny-five and it is a good example of a nodebot.
+
+# Demo Time
+
+{{/markdown}}
+<h2>Code</h2>
+
+<pre><code class="language-javascript">
+
+var five = require("johnny-five"), // require the j5 lib
+    board = new five.Board(); // create a serial connection to your arduino
+
+board.on("ready", function() { // like jquery, but for your board
+
+  // Create an Led on pin 13 and strobe it on/off
+  // Optionally set the speed; defaults to 100ms
+  (new five.Led(13)).strobe();
+  // you are now blinking things like crazy !
+});</code></pre>
+
+<h2>Result !</h2>
+
+<video controls="true" autoplay="autoplay" loop="loop" muted="muted">
+    <source src="http://lesnodebots.eu/prez/riseofthenodebots/vid/led-strobe.mp4">
+    </video>
+
+{{#markdown}}
+# What happened ?
+
+you wrote some javascript and asked a led to blink very fast, till the end of time (or your laptop's battery).
+
+It involved
+
+#### JOHNNY-FIVE
+
+it ofer us a sane and consistent API to talk with things.
+
+### Serial port
+
+Serial port is a node modules, it allow you to use a usb or bluetooth connection to connect to the Arduino's serial port and send command to it. If you are old enough to have send AT command at modems, this is what we are talking about
+
+### Firmata
+
+Firmata is an Arduino sketch (read program) that expose the arduino pins and other function via a serial interface it is written in the Arduino language (an offspring of [processing](https://processing.org/) and C)
+
+### Arduino
+
+An Arduino is a tiny micro controller, you use it to make things blink and move, it have a small memory, a very little processor, but it switch things well !
+
+### The LED
+It blinks, amongst other things that you'll discover at the meetup
+
+## JOHNNY-FIVE ⇄ SERIALPORT ⇄ FIRMATA ⇄ ARDUINO ⇄ LED
+
+so Johnny-five used serial port to communicate with firmata, that asked the arduino to frenetically blink the led
+
+{{/markdown}}

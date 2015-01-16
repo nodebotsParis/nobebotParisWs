@@ -1,0 +1,53 @@
+// styles pour la navigation principale
+
+// .navbar .container {
+//   width: auto;
+// }
+.navbar{
+  background-color: #eee;
+  border-radius: 0;
+}
+.nav{
+  .active {
+    background-color: #bbb;
+  }
+}
+
+.invaderNav{
+  background-color: #eee;
+}
+
+.nav>li>a{
+  color: #000 !important;
+}
+
+.nav>li>a:hover, .nav>li>a:focus{
+  background-color: #bbb;
+}
+
+// top menu anchor
+.affix{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+// couleur du bouton pour etendre le menu mobile
+.icon-bar{background-color: #000;}
+
+// nav par tab de donate
+.nav-tabs>li>a{
+  color: #000 !important;
+}
+
+// bottom nav (footer)
+.bottomNav{
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  a{
+    color: #000;
+  }
+}

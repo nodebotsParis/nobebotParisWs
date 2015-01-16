@@ -1,0 +1,41 @@
+@import 'base';
+
+// helpers
+
+.sectionSpacer{
+  margin-bottom: $sectionSpacer;
+}
+
+// bgs
+.greyBg{
+  background: url(#{$img_path}/navbg.jpg) repeat-x center top $navBgc;
+}
+
+
+// top banner
+.topBannerCont{
+
+height: 240px;
+position: relative;
+}
+
+.mainTitleCont{
+  background-color: rgba(255,255,255,.4);
+//  float: right;
+  position: relative;
+  h1{font-size: 4em;}
+}
+
+.maxime {
+  text-align: right;
+  font-size: 1em;
+  position: absolute;
+  bottom: -1em;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+

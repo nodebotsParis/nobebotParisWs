@@ -1,0 +1,36 @@
+---
+component: navbar
+---
+<!-- Fixed navbar -->
+<div class="navbar" role="navigation" data-spy="affix" data-offset-top="280" data-offset-bottom="200">
+  <div class="container">
+    <div class="navbar-header ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand visible-xs">Navigation</span>
+    </div>
+    <div class="navbar-collapse collapse invaderNav" >
+      <ul class="nav navbar-nav">
+        <!-- you can exclude pages using \{{#isnt}} helper: \{{#isnt data.title 'Blog'}} -->
+        {{#each  site.menu }}
+          {{!--
+          - FIRST: {{@first}} - LAST: {{@last}}
+          --}}
+          <li>
+            <a  href ="{{#if url}} {{url}} {{else}}#{{/if}}"
+                {{#if newTab}}target='_blank'{{/if}}
+                {{#is basename ../page.basename}} class="active"{{/is}}
+                >
+              {{title }}
+            </a >
+          </li>
+        {{/each  }}
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>

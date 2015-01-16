@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} | {{site.title}}</title>
+
+    <link rel="stylesheet" href="{{assets}}/css/styles.css">
+    <link rel="stylesheet" href="{{assets}}/css/prism-okaidia.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Monda:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="greyBg">
+      {{> topBanner }}
+      {{> navbar-fixed-top }}
+    </div>
+
+    <div class="container" role="main">
+      {{#markdown}}
+      {{> body }}
+      {{/markdown}}
+    </div>
+
+    {{> footer }}
+
+    {{!-- jQuery (necessary for Bootstrap's JavaScript plugins)--}}
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    {{!-- bootstap js --}}
+    <script src="{{assets}}/javascripts/bootstrap/transition.js"></script>
+    <script src="{{assets}}/javascripts/bootstrap/affix.js"></script>
+    <script src="{{assets}}/javascripts/bootstrap/carousel.js"></script>
+    <script src="{{assets}}/javascripts/bootstrap/collapse.js"></script>
+    <script src="{{assets}}/javascripts/bootstrap/tab.js"></script>
+    <script src="{{assets}}/javascripts/bootstrap/tab.js"></script>
+
+    <script src="{{assets}}/javascripts/vendor/prism.js"></script>
+
+    {{!-- home made --}}
+
+  </body>
+</html>
