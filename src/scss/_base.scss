@@ -6,13 +6,13 @@ $assets_path: "/assets/";
 $img_path: "/assets/images";
 
 // colors
-
+$botY : #F8E01E;
 $labGreen : #0B8140;
 $linkColor : #999;
 $bodyTxtColor : #666;
 $titleColor : #484848;
-$navBgc : #001972;
-$botY : #F8E01E;
+$navBgc : $botY;
+
 $footerBgColor : $botY;
 // flatMenu
 $ftmTxtColor : $bodyTxtColor;

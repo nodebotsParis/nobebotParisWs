@@ -14,9 +14,9 @@ not easy to install if you don't have the prerequisites, just used as a starting
 
 ## install
 
-```` npmi && bower install ```
+``` npmi && bower install ```
 
 ## Serve
 
-```` grunt server ```
+``` grunt server ```
 
